@@ -1,0 +1,42 @@
+.info {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+
+  img {
+    margin-inline: auto;
+    width: 400px;
+  }
+
+  div {
+    margin-inline: auto;
+    font-size: 24px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  span {
+    display: block;
+  }
+
+  button {
+    margin-top: 10px;
+    margin-inline: auto;
+    max-width: 240px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #000;
+    border: 1px solid #fff;
+  }
+
+  a {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}

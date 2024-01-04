@@ -1,0 +1,43 @@
+.section {
+  padding-block: 40px 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.image {
+  width: 768px;
+  height: 550px;
+  object-fit: cover;
+}
+
+.info {
+  max-width: 740px;
+  width: 100%;
+
+  .title {
+    color: #9ea2aa;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+  }
+
+  ul {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 44px;
+  }
+
+  .desc {
+    color: #9ea2aa;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px; /* 143.75% */
+  }
+}
+

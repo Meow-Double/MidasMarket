@@ -1,0 +1,29 @@
+.breadcrumbs {
+  display: flex;
+  gap: 10px;
+}
+
+.link {
+    position: relative;
+    padding-right: 16px;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    content: " /";
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:last-child{
+    opacity: .8;
+    cursor: default;
+    pointer-events: none;
+    
+    &::after{
+        display: none;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+$main-color: #fbd13e;
+
+.card {
+  width: 232px;
+  // min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .InfoBlock {
+    height: 100%;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 233px;
+    max-height: 233px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.grams {
+  display: inline-block;
+  background-color: rgba($color: #fff, $alpha: 0.3);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+.text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn {
+    width: 42px;
+    height: 42px;
+    background-color: $main-color;
+
+    path {
+      fill: #000;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #fbd13e;
+
+      path {
+        fill: #fbd13e;
+      }
+    }
+  }
+
+  .btnType {
+    width: 128px;
+    height: 42px;
+    border: 2px solid $main-color;
+    color: $main-color;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $main-color;
+      color: #000;
+      font-weight: 700;
+    }
+  }
+}
+
+.lessPrice {
+  font-size: 18px;
+  font-weight: 600;
+}
+.oldPrice {
+  opacity: 0.8;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration-line: line-through;
+}
+.price {
+  font-size: 23px;
+  font-weight: 800;
+}

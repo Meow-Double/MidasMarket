@@ -1,0 +1,150 @@
+.inner {
+  position: relative;
+  width: 100%;
+  height: 1040px;
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dot {
+  position: absolute;
+  background-image: url("../../../../public/images/header/dot.svg");
+}
+
+//------------------Images-block
+.images {
+  position: absolute;
+  top: 0;
+  right: 0;
+  .main {
+  }
+  .dot {
+    right: 0;
+    bottom: -220px;
+    width: 275px;
+    height: 364px;
+  }
+}
+.block {
+  position: absolute;
+  bottom: -160px;
+  left: 60px;
+
+  background-image: url("../../../../public//images//header//main-block-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 355px;
+  height: 357px;
+  padding: 40px;
+}
+
+//------------------Card-Elements
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.grams {
+  display: inline-block;
+  background-color: rgba($color: #fff, $alpha: 0.3);
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 18px;
+}
+.text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+.price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  p {
+    font-size: 23px;
+    font-weight: 800;
+  }
+
+  button {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbd13e;
+    transition: all .3s ease-in-out ;
+    
+    &:hover{
+      background-color: transparent;
+      border: 1px solid #fbd13e;
+      path{
+        fill:#fbd13e;
+      }
+    }
+
+    path {
+      fill: #000;
+    }
+  }
+}
+
+//------------------Left-block
+.left {
+  width: 312px;
+  height: 400px;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  h4 {
+    position: absolute;
+    top: 0;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .dot {
+    width: 160px;
+    height: 190px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .contacts {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .tel {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .email {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: underline;
+  }
+}
+
+// ------------Decor-block
+
+.decor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  img {
+    width: 264px;
+    height: 264px;
+  }
+}

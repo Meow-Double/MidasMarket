@@ -1,0 +1,33 @@
+.swiper-button {
+  width: 54px !important;
+  height: 54px !important;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  background-color: transparent;
+
+  position: absolute;
+  z-index: 10;
+
+ &:hoveR{
+  path{
+    fill: #646BFE;
+  }
+ }
+}
+.image-swiper-button-prev {
+  left: 0;
+}
+
+.image-swiper-button-next {
+  right: 0;
+}
+
+.slider-buttons {
+  position: relative;
+  width: 150px;
+  height: 54px;
+}
+
+.swiper-button-disabled {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}

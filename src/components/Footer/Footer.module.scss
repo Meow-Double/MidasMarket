@@ -1,0 +1,53 @@
+.footer {
+  background-color: #000;
+  padding: 50px 0 30px 0;
+  font-size: 12px;
+  font-weight: 500;
+}
+.info {
+  display: grid;
+  grid-template-columns: 210px 730px 420px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #393939;
+}
+.items {
+  display: flex;
+  gap: 20px;
+
+  li {
+    text-decoration-line: underline;
+  }
+}
+.links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+
+  .tel {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .email {
+    text-decoration-line: underline;
+  }
+}
+
+.row {
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.textPolicy {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  text-decoration-line: underline;
+}

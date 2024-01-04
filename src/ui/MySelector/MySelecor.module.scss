@@ -1,0 +1,74 @@
+.select {
+  position: relative;
+  text-align: start;
+}
+
+.selectActive {
+  border: none;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.65px;
+  text-transform: uppercase;
+  position: relative;
+  padding-right: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url("../../../../public/images/arrow.svg");
+    width: 14px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.selectList {
+  margin-top: 6px;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #000;
+  padding-block: 10px;
+  width: max-content;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-20px);
+  transition: all .3s ease-in-out;
+
+  li {
+    cursor: pointer;
+    padding-inline: 20px;
+    width: 100%;
+
+    &:hover {
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+  }
+
+
+  .disabled {
+    cursor: default;
+    text-decoration: line-through;
+  
+    &:hover {
+      background-color: #000;
+      color: #9ea2aa
+      
+    }
+  }
+  
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
