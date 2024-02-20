@@ -7,7 +7,6 @@ export const SvgIcon = ({
   size,
   viewBox,
   children,
-  ...props
 }: SvgIconProps) => {
   return (
     <svg

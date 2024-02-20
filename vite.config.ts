@@ -6,7 +6,7 @@ import viteConfigPaths from "vite-tsconfig-paths"
 // https://vitejs.dev/config/
 
 export default defineConfig({
-  // base: "MidasMarket",
+  base: "/MidasMarket/",
   plugins: [
     react(),
     sassDts(),

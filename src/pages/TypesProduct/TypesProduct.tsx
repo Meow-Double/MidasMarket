@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import BreadCrumbs from "../../ui/Breadcrumbs/BreadCrumbs";
 import AboutProduct from "./AboutProduct/AboutProduct";
 import FrequentOrders from "./FrequentOrders/FrequentOrders";
-import cl from "./TypesProduct.module.scss";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { ItemsTypes } from "types/Items";

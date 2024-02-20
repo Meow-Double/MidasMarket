@@ -1,8 +1,6 @@
-import { FetchAddCart } from 'store/actions/cart';
 import cl from './Header.module.scss';
-import { CartIcon } from 'ui/SvgIcons/Icons';
-import { IItems } from 'types/cart';
-
+import MainImage from '../../../../public/images/header/main-img.jpg';
+import DecorImage from '../../../../public/images/header/decor-img.png';
 
 // const mainDish = {
 //   "id": 13,
@@ -23,7 +21,6 @@ import { IItems } from 'types/cart';
 // }
 
 const Header: React.FC = () => {
-
   // const addCartItem = () => {
   //   const newId = mainDish.id ? mainDish.id : -1;
   //   const obj: IItems = { mainDish.title, mainDish.image, mainDish.price, mainDish.grams, id:newId};
@@ -47,11 +44,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className={cl.images}>
-            <img
-              // className={cl.main}
-              src="./images/header/main-img.jpg"
-              alt="image"
-            />
+            <img src={MainImage} alt="image" />
             <div className={cl.dot}></div>
             <div className={cl.block}>
               <h4 className={cl.title}>Стейк из лосося с овощами</h4>
@@ -69,7 +62,7 @@ const Header: React.FC = () => {
             </div>
           </div>
           <div className={cl.decor}>
-            <img src="./images/header/decor-img.png" alt="" />
+            <img src={DecorImage} alt="" />
             <h4 className={cl.title}>Тирамису</h4>
             <span className={cl.grams}>430 г</span>
             <div className={cl.price}>

@@ -4,6 +4,7 @@ import { Dropdown } from "ui";
 import { Link } from "react-router-dom";
 import { useTypedSelector } from "hooks";
 import { useMemo } from "react";
+import Logo from "../../../public/images/logo.svg";
 
 const navItems: string[] = [
   "АКЦИИ",
@@ -57,7 +58,7 @@ const Navbar: React.FC = () => {
       <div className="container">
         <div className={cl.inner}>
           <a href="#!">
-            <img src="/images/logo.svg" alt="logo" />
+            <img src={Logo} alt="logo" />
           </a>
           <ul className={cl.navItems}>{renderNavItems}</ul>
 

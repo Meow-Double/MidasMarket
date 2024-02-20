@@ -1,4 +1,4 @@
-import cl, { dropdown } from "./Dropdown.module.scss";
+import cl from "./Dropdown.module.scss";
 import { useState, memo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 

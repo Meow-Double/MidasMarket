@@ -1,5 +1,5 @@
 import cl from "./Footer.module.scss";
-
+import Logo from "../../../public/images/logo.svg";
 const navItems: string[] = ["Обратная связь", "Доставка", "Оплата", "Контакты"];
 
 const Footer: React.FC = () => {
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <div>
           <div className={cl.info}>
             <a href="#!">
-              <img src="/images/logo.svg" alt="logo" />
+              <img src={Logo} alt="logo" />
             </a>
             <ul className={cl.items}>{renderNavItems()}</ul>
             <div className={cl.links}>
