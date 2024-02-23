@@ -6,6 +6,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { ItemsTypes } from "types/Items";
 
+
 const TypesProduct: React.FC = () => {
   const { id } = useParams();
   useEffect(() => window.scrollTo(0, 0), [id]);
@@ -14,7 +15,7 @@ const TypesProduct: React.FC = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/items/${id}`)
+      .get(`https://69ef1ac0b92c6242.mokky.dev/items/${id}`)
       .then((res) => setState(res.data));
   }, [id]);
 

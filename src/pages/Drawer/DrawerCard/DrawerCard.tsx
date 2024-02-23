@@ -1,8 +1,9 @@
-import { CloseIcon } from "ui/SvgIcons/Icons";
-import cl from "./DrawerCard.module.scss";
-import { useEffect, useState } from "react";
-import { useAction } from "hooks";
-import {memo} from "react";
+import { CloseIcon } from 'ui/SvgIcons/Icons';
+import cl from './DrawerCard.module.scss';
+import { useEffect, useState } from 'react';
+import { useAction } from 'hooks';
+import { memo } from 'react';
+import { imageArray } from 'assets/Array';
 
 interface DrawerCardProps {
   title: string | null;
@@ -12,13 +13,7 @@ interface DrawerCardProps {
   id: number;
 }
 
-const DrawerCard = memo(function DrawerCard({
-  title,
-  grams,
-  price,
-  image,
-  id,
-}:DrawerCardProps) {
+const DrawerCard = memo(function DrawerCard({ title, grams, price, id }: DrawerCardProps) {
   const [count, setCount] = useState<number>(1);
 
   const { RemoveItem, ChangeCount } = useAction();
@@ -26,13 +21,13 @@ const DrawerCard = memo(function DrawerCard({
   useEffect(() => {
     const countLocal = Number(localStorage.getItem(`${id}`));
     if (countLocal) {
-      if(countLocal <= 10 && countLocal >= 1){
+      if (countLocal <= 10 && countLocal >= 1) {
         setCount(countLocal);
-        ChangeCount({id:id, count:countLocal})
-      }else{
-        localStorage.setItem(`${id}`, "1");
+        ChangeCount({ id: id, count: countLocal });
+      } else {
+        localStorage.setItem(`${id}`, '1');
         setCount(1);
-        ChangeCount({id:id, count:1})
+        ChangeCount({ id: id, count: 1 });
       }
     }
   }, []);
@@ -40,12 +35,12 @@ const DrawerCard = memo(function DrawerCard({
   const handlePlusCount = () => {
     localStorage.setItem(`${id}`, `${count + 1}`);
     setCount((prev) => prev + 1);
-    ChangeCount({id:id, count:count + 1})
+    ChangeCount({ id: id, count: count + 1 });
   };
   const handleMinusCount = () => {
     localStorage.setItem(`${id}`, `${count - 1}`);
     setCount((prev) => prev - 1);
-    ChangeCount({id:id, count:count - 1})
+    ChangeCount({ id: id, count: count - 1 });
   };
 
   const onRemoveCartItem = () => {
@@ -56,7 +51,7 @@ const DrawerCard = memo(function DrawerCard({
   return (
     <li className={cl.card}>
       <div className={cl.info}>
-        <img src={`./images/card/${image}`} alt="img" />
+        <img src={imageArray[Math.round(id - 1)]} alt="img" />
         <div>
           <h4>{title}</h4>
           <span className={cl.grams}>{grams} г</span>
